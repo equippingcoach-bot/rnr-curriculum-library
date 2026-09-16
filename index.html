@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resilients in Recovery&reg; — Curriculum &amp; Workshop Library</title>
+<style>
+  :root {
+    --maroon: #5B1A1A;
+    --maroon-dark: #3E1010;
+    --ink: #1A1A1A;
+    --gray: #595959;
+    --rule: #BFA8A8;
+    --paper: #FDFDFC;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--paper);
+    color: var(--ink);
+  }
+
+  body {
+    font-family: Calibri, "Segoe UI", system-ui, -apple-system, sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, .masthead-title {
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--maroon);
+    font-weight: 700;
+    margin: 0;
+  }
+
+  a { color: var(--maroon); }
+  a:hover, a:focus { color: var(--maroon-dark); }
+  a:focus-visible { outline: 2px solid var(--maroon); outline-offset: 3px; }
+
+  .wrap {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ---------- Masthead ---------- */
+  header.masthead {
+    padding: 56px 0 32px;
+    text-align: center;
+    border-bottom: 2px solid var(--maroon);
+  }
+
+  .masthead-title {
+    font-size: 2rem;
+    letter-spacing: 0.01em;
+  }
+
+  .masthead-title sup {
+    font-size: 0.9rem;
+  }
+
+  .masthead-sub {
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    color: var(--gray);
+    font-size: 1.05rem;
+    margin-top: 6px;
+  }
+
+  .masthead-tag {
+    color: var(--gray);
+    font-size: 0.92rem;
+    margin-top: 10px;
+  }
+
+  /* ---------- Intro ---------- */
+  .intro {
+    padding: 32px 0 8px;
+    max-width: 620px;
+  }
+
+  .intro p {
+    color: var(--ink);
+    margin: 0 0 14px;
+  }
+
+  .intro .mission {
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    color: var(--gray);
+    border-left: 2px solid var(--rule);
+    padding-left: 16px;
+    margin: 20px 0 4px;
+  }
+
+  /* ---------- Category sections ---------- */
+  section.category {
+    padding: 34px 0 6px;
+  }
+
+  section.category h2 {
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+    border-bottom: 1.5px solid var(--maroon);
+  }
+
+  .category-note {
+    color: var(--gray);
+    font-size: 0.9rem;
+    margin: 10px 0 4px;
+  }
+
+  /* ---------- Document index rows ---------- */
+  ul.doc-list {
+    list-style: none;
+    margin: 8px 0 0;
+    padding: 0;
+  }
+
+  .doc-row {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .doc-row:last-child { border-bottom: none; }
+
+  .doc-main {
+    flex: 0 0 auto;
+    max-width: 78%;
+  }
+
+  .doc-title {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.03rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .doc-title:hover { text-decoration: underline; }
+
+  .doc-desc {
+    display: block;
+    font-size: 0.88rem;
+    color: var(--gray);
+    margin-top: 3px;
+    font-weight: 400;
+    font-family: Calibri, "Segoe UI", system-ui, sans-serif;
+  }
+
+  .doc-leader {
+    flex: 1 1 auto;
+    border-bottom: 1px dotted var(--rule);
+    height: 0;
+    margin-bottom: 6px;
+    min-width: 12px;
+  }
+
+  .doc-format {
+    flex: 0 0 auto;
+    font-size: 0.78rem;
+    color: var(--gray);
+    letter-spacing: 0.03em;
+    border: 1px solid var(--rule);
+    padding: 2px 7px;
+    border-radius: 2px;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 480px) {
+    .doc-row { flex-wrap: wrap; }
+    .doc-main { max-width: 100%; }
+    .doc-leader { display: none; }
+  }
+
+  /* ---------- Footer ---------- */
+  footer {
+    margin-top: 56px;
+    padding: 22px 0 48px;
+    border-top: 1px solid var(--rule);
+    text-align: center;
+    color: var(--gray);
+    font-size: 0.82rem;
+  }
+</style>
+</head>
+<body>
+
+  <header class="masthead">
+    <div class="wrap">
+      <div class="masthead-title">RESILIENTS IN RECOVERY<sup>&reg;</sup></div>
+      <div class="masthead-sub">Curriculum &amp; Workshop Library</div>
+      <div class="masthead-tag">A faith-centered 12-Step recovery ministry &mdash; Athens, GA</div>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <div class="intro">
+      <p>
+        This library holds the printed materials that support the Resilients in Recovery&reg;
+        12-Step Curriculum &mdash; the core curriculum, guided workshops, and participant worksheets
+        used in weekly step-work meetings. Every document here can be viewed in your browser
+        or downloaded for printing.
+      </p>
+      <p class="mission">
+        &ldquo;We who have experienced brokenness but have chosen life recovery, choose to love
+        the broken, offer hope to the hopeless and provide a sober, safe, and supportive
+        environment for the hurting to heal, be transformed and be equipped for service
+        through the power of Jesus Christ.&rdquo;
+      </p>
+    </div>
+
+    <!-- ===================== CURRICULUM ===================== -->
+    <section class="category" id="curriculum">
+      <h2>Curriculum</h2>
+      <ul class="doc-list">
+        <li class="doc-row">
+          <div class="doc-main">
+            <a class="doc-title" href="curriculum/RnR_12_Step_Transformation_Curriculum_ver_7-2.pdf">
+              12-Step Transformation Curriculum
+            </a>
+            <span class="doc-desc">Version 7.2 &mdash; the full RnR curriculum, Pre-Step through Step 12</span>
+          </div>
+          <span class="doc-leader"></span>
+          <span class="doc-format">PDF</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===================== WORKSHOPS ===================== -->
+    <section class="category" id="workshops">
+      <h2>Workshops</h2>
+      <ul class="doc-list">
+        <li class="doc-row">
+          <div class="doc-main">
+            <a class="doc-title" href="workshops/RESILIENTS_in_11_Weeks.pdf">
+              RESILIENTS in 11 Weeks
+            </a>
+            <span class="doc-desc">An 11-session workshop built around the RESILIENTS acrostic principles</span>
+          </div>
+          <span class="doc-leader"></span>
+          <span class="doc-format">PDF</span>
+        </li>
+        <li class="doc-row">
+          <div class="doc-main">
+            <a class="doc-title" href="workshops/RnR_Workshop_SMARTGoals.pdf">
+              SMART Goals for Recovery
+            </a>
+            <span class="doc-desc">Goal-setting workshop applying the SMART framework to recovery work</span>
+          </div>
+          <span class="doc-leader"></span>
+          <span class="doc-format">PDF</span>
+        </li>
+        <li class="doc-row">
+          <div class="doc-main">
+            <a class="doc-title" href="workshops/RnR_Workshop_RecoveryCompanion.pdf">
+              Recovery Companion Workshop
+            </a>
+            <span class="doc-desc">Multi-session workshop mapping themes of recovery memoir to the RnR 12-Step Curriculum</span>
+          </div>
+          <span class="doc-leader"></span>
+          <span class="doc-format">PDF</span>
+        </li>
+        <li class="doc-row">
+          <div class="doc-main">
+            <a class="doc-title" href="workshops/RnR_Workshop_AddictoholicReconstructing_FourStage.pdf">
+              The Addictoholic Reconstructing &mdash; Four-Stage Arc
+            </a>
+            <span class="doc-desc">Companion workshop organized around the book&rsquo;s four-stage recovery arc</span>
+          </div>
+          <span class="doc-leader"></span>
+          <span class="doc-format">PDF</span>
+        </li>
+        <li class="doc-row">
+          <div class="doc-main">
+            <a class="doc-title" href="workshops/RnR_Workshop_AddictoholicReconstructing_FiveThemes.pdf">
+              The Addictoholic Reconstructing &mdash; Five Themes
+            </a>
+            <span class="doc-desc">Companion workshop organized around five cross-cutting recovery themes</span>
+          </div>
+          <span class="doc-leader"></span>
+          <span class="doc-format">PDF</span>
+        </li>
+        <li class="doc-row">
+          <div class="doc-main">
+            <a class="doc-title" href="workshops/RnR_Reclaiming_Yourself_Codependency_Workshop.docx">
+              Reclaiming Yourself: A Codependency Workshop
+            </a>
+            <span class="doc-desc">11-session workshop addressing codependency patterns in recovery</span>
+          </div>
+          <span class="doc-leader"></span>
+          <span class="doc-format">DOCX</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===================== WORKSHEETS ===================== -->
+    <section class="category" id="worksheets">
+      <h2>Worksheets</h2>
+      <ul class="doc-list">
+        <li class="doc-row">
+          <div class="doc-main">
+            <a class="doc-title" href="worksheets/RnR_Worksheet_Step4Inventory.docx">
+              Step 4 Moral Inventory
+            </a>
+            <span class="doc-desc">Questionnaire-style searching and fearless moral inventory worksheet</span>
+          </div>
+          <span class="doc-leader"></span>
+          <span class="doc-format">DOCX</span>
+        </li>
+        <li class="doc-row">
+          <div class="doc-main">
+            <a class="doc-title" href="worksheets/RnR_Worksheet_ForgivenessLetter.docx">
+              Forgiveness Letter
+            </a>
+            <span class="doc-desc">Companion page to the Step 4 inventory</span>
+          </div>
+          <span class="doc-leader"></span>
+          <span class="doc-format">DOCX</span>
+        </li>
+      </ul>
+      <p class="category-note">
+        More worksheets are added here as they are completed.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; Stanton &amp; Ariella Robertson &nbsp;|&nbsp; Resilients in Recovery&reg; &nbsp;|&nbsp; Athens, GA
+  </footer>
+
+</body>
+</html>
